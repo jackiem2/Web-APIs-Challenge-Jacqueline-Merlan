@@ -62,3 +62,16 @@ var questions = [
 
 // start button
 startButton.addEventListener("click",startGame);
+
+// set the timer
+function startTimer(duration, display){
+    var timer = duration, minutes, seconds
+
+}
+
+// start the quiz
+function startGame() {
+startButton.classList.add('hidden');
+
+
+}
