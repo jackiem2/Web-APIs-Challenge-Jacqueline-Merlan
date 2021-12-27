@@ -64,14 +64,26 @@ var questions = [
 startButton.addEventListener("click",startGame);
 
 // set the timer
-function startTimer(duration, display){
-    var timer = duration, minutes, seconds
+function startTimer(){
+    timeleft--;
+    timerEl.textContent = "Time:" + timeLeft;
+    if(timeLeft <= 0) {
+        saveScore();
+    }
 
 }
 
 // start the quiz
 function startGame() {
 startButton.classList.add('hidden');
+shuffleQuestions = questions.sort(() => Math.random() - .5);
+questionContainerEl.classList.remove("hidden");
+currentQuestionIndex = 0;
+nextQuestion();
+nextButton.classList.remove("hidden")
 
+}
+
+function showQuestion (questions) {
 
 }
