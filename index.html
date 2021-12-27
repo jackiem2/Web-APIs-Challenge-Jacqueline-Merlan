@@ -10,13 +10,65 @@
 
 
     <body>
+        <header>
+            <div class="scores">
+                <a id="highscores-list">View High Scores</a>
+            </div>
+            <div id="time" class="time">
+                Time: 75
+            </div>
+
+        </header>
+
+        <section id="start-section" class="start-quiz">
         <h1>Coding Quiz Challenge</h1>
-            <p>Try to answer the following code-related questions within the limit. Keep in mind that incorrect answers will penalize your score time by 15 seconds</p>
+            <p>Try to answer the following code-related questions within the limit. 
+            <br>Keep in mind that incorrect answers will penalize your score/time 
+            <br>by ten seconds!
+            </p>
+            <div class="controls">
+                <button>Start Quiz</button>
+            </div>
+        </section>
 
+        <section id="question-container" class="hidden">
+            <h1 id="questions">Question</h1>
+            <div id="answer-button" class="btn-answer">
+                <button>Answer 1</button>
+                <button>Answer 2</button>
+                <button>Answer 3</button>
+                <button>Answer 4</button>
+            </div>
+            <h2 id="check-answers" class="correct-wrong"></h2>
+            <div class="controls">
+                <button id="next-btn" class="next-btn hidden">Next</button>
+            </div>
+        </section>
 
+        <section id="score-container" class="hidden">
+            <form id="submit-form">
+                <h3 id="quiz-score"></h3>
+                <label id="initial-label">Enter Initials:</label>
+                <input type="text" id="initial-field"/>
+                <button id="submit-btn">Submit</button>
+            </form>
+        </section>
 
+        <section id="highscore" class="highscore-container hidden">
+            <div id="high-score">
+                <h1 class="center">High Scores</h1>
+                <div id="highscore" class="highscore highscore-list">
+                </div>
+            <div class="controls">
+                <button id="back-btn">Go Back</button>
+                <button id="clear-btn">Clear High Scores</button>
+            </div>
+        </div>
+        </section>
 
-        
-
+        <script src="./assets/js/questions.js"></script>
+        <script src=".assets/js/script.js"></script>
+    
     </body>
+
 </html>

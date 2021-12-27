@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1,5;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    text-align:center
+}
+
+header {
+    margin: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.scores a, .time {
+    font-size: 20px;
+}
+
+.scores {
+    color: violet;
+    cursor: pointer;
+}
+
+.scores a:hover {
+    color:violet;
+}
+
+/* Starting the Quiz*/
+
+.start-quiz {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: grey;
+    margin: 20px;
+    font-style: italic;
+    text-align: center;
+    
+}
+
+.btn-answer {
+    display: grid;
+    gap: 10px;
+    margin: 10px;
+    
+}
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    width: auto;
+    overflow: visible;
+    padding: 10px;
+    background-color: rgb(51, 3, 105);
+    border-radius: 10px;
+    font-size: large;
+    margin: 10px;
+    color:white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: violet;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.btn.correct {
+    background-color: green;
+}
+
+.btn.wrong {
+    background-color: red;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid ;
+    box-sizing: border-box;
+
+}
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.highscore {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
